@@ -1,6 +1,5 @@
 const dateTime = require('./dateTime.js');
 const web3jsraw = require('web3js-raw');
-//web3jsraw = require('../libs/web3raw')
 const Web3 = require('web3');
 const ethereumnode= global.gConfig.node;
 const deviceConfig = require('../config/' + global.gConfig.deviceFile); 
@@ -19,7 +18,7 @@ const nonce = web3.eth.getTransactionCount(deviceConfig.address, "latest")
 var W3JSR = new web3jsraw();
 W3JSR.getWeb3(artifact.abi, latestNetwork.address, ethereumnode);
 
-//W3JSR.getDefaultTxnAttributes () ;
+
 
 // Instance using ABI and contract address
 const conceptProof = web3.eth.contract(artifact.abi).at(latestNetwork.address);
@@ -30,12 +29,11 @@ const setState = async (message) => {
     W3JSR.prepareSignSend(artifact.abi,latestNetwork.address,"set_mystate",deviceConfig.address,privKey,[message]).then((result,error) =>{
         console.log(result);
         console.log(dateTime.getTimeNow() + ": Tx success");
-        // res.status(200).send(JSON.stringify(result));
+        
     },(error) =>{
         console.log(error);
         console.log(dateTime.getTimeNow() + ": Tx erro");
-        //retVal = {"error":error};
-       // res.status(200).send(JSON.stringify(retVal));
+        
     });
 };
 

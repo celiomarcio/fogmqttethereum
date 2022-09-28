@@ -1,10 +1,9 @@
 #!/usr/bin/ruby
 
 # ARGS file,time(m),nodes,miners 
-#ruby filter.rb 5min5Node2Miners.log 5 5 2
+# ruby filter.rb 5min5Node2Miners.log 5 5 2
 
-# Data example
-#2022-22-5-15:21:28: Tx init
+# 2022-22-5-15:21:28: Tx init
 
 require 'date'
 
