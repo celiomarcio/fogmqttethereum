@@ -1,0 +1,7 @@
+{
+    "node":"http://192.168.0.19:8545",
+    "deviceFile": "deviceconfig.json",
+    "port": "1338",
+    "mqttHost": "127.0.0.1",
+    "mqttClientId": "mqttjsNodei01"
+}

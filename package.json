@@ -1,0 +1,32 @@
+{
+  "name": "FogMQTTEthereum",
+  "version": "0.1.0",
+  "description": "IoT Blockchain Fog MQTT Ethereum",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Celio Marcio",
+  "license": "GPL",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.11.0"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.14",
+    "ethereumjs-util": "^5.2.0",
+    "express": "4.16.3",
+    "merkle-tree-solidity": "^1.0.8",
+    "mqtt": "^4.3.7",
+    "request": "2.88.0",
+    "request-promise-native": "^1.0.8",
+    "truffle": "^5.5.27",
+    "web3": "0.20.6",
+    "web3js-raw": "^0.0.2-beta.16"
+  }
+}
